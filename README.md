@@ -194,6 +194,16 @@ Coffee Cash Register is an actively developed full-stack project. Core POS workf
 
 ---
 
+## Source Code
+
+This repository is a public showcase of **Coffee Cash Register**, intended to present the project, its architecture and its main features.
+
+The production source code is maintained in a private repository.
+
+**Source code can be made available on request for professional review or recruitment purposes.**
+
+---
+
 ## Author
 
 **B. Chakib**  
