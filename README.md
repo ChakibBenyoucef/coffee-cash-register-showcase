@@ -150,13 +150,18 @@ The project also includes a public-facing presentation page introducing the POS 
 ## Architecture
 
 ```text
-coffee-cash-register/
-├── frontend/        # Angular POS and administration interface
-├── backend/         # Spring Boot REST API and business logic
-├── printer-agent/   # Local receipt-printer integration
-├── deploy/          # Deployment configuration
-├── screenshots/     # Application screenshots
-└── README.md
+Angular 11 Frontend
+        │
+        │ REST API / JWT
+        ▼
+Spring Boot 3.5 Backend
+        │
+        ├──────────────► MySQL 8
+        │
+        └──────────────► Local Print Agent
+                              │
+                              ▼
+                       Thermal Printer
 ```
 
 The Angular client communicates with the Spring Boot backend through REST APIs. The backend handles business rules, authentication, persistence, reporting, notifications and document generation, while MySQL stores application data. The local Print Agent provides the workstation-side bridge required for receipt printing.
@@ -175,7 +180,7 @@ The interface supports **French and English**. The application is designed for d
 
 ---
 
-## Additional Screen
+## Category Management
 
 ![Categories](screenshots/categories.png)
 
